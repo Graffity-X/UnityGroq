@@ -76,7 +76,7 @@ namespace Graffity.Groq.Text
                 // UnityWebRequest を作成
                 using (UnityWebRequest request = new UnityWebRequest(api.Endpoint, "Post"))
                 {
-                    // Authorization ヘッダーを追加
+                    // Add Header manually
                     request.SetRequestHeader("Content-Type", "application/json");
                     request.SetRequestHeader("Authorization", "Bearer " + api.ApiKey);
 

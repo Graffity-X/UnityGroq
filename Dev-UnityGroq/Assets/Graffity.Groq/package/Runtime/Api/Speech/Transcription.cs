@@ -62,7 +62,7 @@ namespace Graffity.Groq.Speech
                 // UnityWebRequest を作成
                 using(UnityWebRequest request = UnityWebRequest.Post(api.Endpoint, form))
                 {
-                    // Authorization ヘッダーを追加
+                    // Add Header manually
                     request.SetRequestHeader("Authorization", "Bearer " + api.ApiKey);
                     // request.SetRequestHeader("Content-Type", "multipart/form-data");
                     

@@ -42,10 +42,10 @@ namespace Graffity.Groq.File
         {
             try
             {
-                // UnityWebRequest を作成
+                // make UnityWebRequest
                 using (UnityWebRequest request = new UnityWebRequest(Endpoint, "Get"))
                 {
-                    // Authorization ヘッダーを追加
+                    // Add Header manually
                     request.SetRequestHeader("Content-Type", "application/json");
                     request.SetRequestHeader("Authorization", "Bearer " + ApiKey);
                     request.downloadHandler = new DownloadHandlerBuffer();
